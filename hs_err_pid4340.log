@@ -1,0 +1,194 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 92274688 bytes for Failed to commit area from 0x00000000a8400000 to 0x00000000adc00000 of length 92274688.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (./src/hotspot/os/windows/os_windows.cpp:3390), pid=4340, tid=3348
+#
+# JRE version:  (11.0.15+9) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.15+9-LTS, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:C:\\Users\\Юыќур\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=C:\\Users\\Olga\\IdeaProjects\\NotFoundException\\target\\jacoco.exec C:\Users\134E~1\AppData\Local\Temp\surefire18045325835992667389\surefirebooter14239617003965210248.jar C:\Users\Юыќур\AppData\Local\Temp\surefire18045325835992667389 2022-09-16T14-54-43_415-jvmRun1 surefire13716747797877981967tmp surefire_0355760868373944978tmp
+
+Host: AMD A6-3410MX APU with Radeon(tm) HD Graphics, 4 cores, 5G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
+Time: Fri Sep 16 14:54:44 2022  Windows 10 , 64 bit Build 19041 (10.0.19041.1889) elapsed time: 0.038197 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001721ce2f800):  JavaThread "Unknown thread" [_thread_in_vm, id=3348, stack(0x0000002a51800000,0x0000002a51900000)]
+
+Stack: [0x0000002a51800000,0x0000002a51900000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x61e7ba]
+V  [jvm.dll+0x7ab749]
+V  [jvm.dll+0x7ace38]
+V  [jvm.dll+0x7ad513]
+V  [jvm.dll+0x24f968]
+V  [jvm.dll+0x61ba5a]
+V  [jvm.dll+0x6102b5]
+V  [jvm.dll+0x30768c]
+V  [jvm.dll+0x307512]
+V  [jvm.dll+0x30c226]
+V  [jvm.dll+0x3528cf]
+V  [jvm.dll+0x352300]
+V  [jvm.dll+0x2e4688]
+V  [jvm.dll+0x2e57e6]
+V  [jvm.dll+0x785597]
+V  [jvm.dll+0x786d1f]
+V  [jvm.dll+0x35f609]
+V  [jvm.dll+0x768530]
+V  [jvm.dll+0x3cd0ff]
+V  [jvm.dll+0x3cf491]
+C  [jli.dll+0x5207]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x526a1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001721acb1fe0, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000001721ce47000 GCTaskThread "GC Thread#0" [stack: 0x0000002a51900000,0x0000002a51a00000] [id=8268]
+  0x000001721ce68800 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000002a51a00000,0x0000002a51b00000] [id=9388]
+  0x000001721ad8e800 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000002a51b00000,0x0000002a51c00000] [id=8100]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007fff44453e57]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000001721ce2c850] Heap_lock - owner thread: 0x000001721ce2f800
+
+Heap address: 0x00000000a8400000, size: 1404 MB, Compressed Oops mode: Non-zero based: 0x00000000a8400000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.020 Loaded shared library C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff72e2e0000 - 0x00007ff72e2ed000 	C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\java.exe
+0x00007fff92810000 - 0x00007fff92a08000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fff91b80000 - 0x00007fff91c3d000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007fff90500000 - 0x00007fff907ce000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007fff90010000 - 0x00007fff90110000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007fff7c400000 - 0x00007fff7c417000 	C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\jli.dll
+0x00007fff91c40000 - 0x00007fff91de0000 	C:\WINDOWS\System32\USER32.dll
+0x00007fff725b0000 - 0x00007fff725c9000 	C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\VCRUNTIME140.dll
+0x00007fff904d0000 - 0x00007fff904f2000 	C:\WINDOWS\System32\win32u.dll
+0x00007fff89780000 - 0x00007fff89a1a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007fff90c90000 - 0x00007fff90cba000 	C:\WINDOWS\System32\GDI32.dll
+0x00007fff91de0000 - 0x00007fff91e7e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007fff8ff00000 - 0x00007fff9000b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007fff90400000 - 0x00007fff9049d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007fff909f0000 - 0x00007fff90a20000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007fff60760000 - 0x00007fff607fb000 	C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\msvcp140.dll
+0x00007fff44160000 - 0x00007fff44ce3000 	C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\server\jvm.dll
+0x00007fff919b0000 - 0x00007fff91a5e000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007fff92440000 - 0x00007fff924dc000 	C:\WINDOWS\System32\sechost.dll
+0x00007fff91880000 - 0x00007fff919a5000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007fff92430000 - 0x00007fff92438000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007fff77bb0000 - 0x00007fff77bb9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007fff908a0000 - 0x00007fff9090b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007fff81dd0000 - 0x00007fff81df7000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007fff85260000 - 0x00007fff8526a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007fff8ddf0000 - 0x00007fff8de02000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007fff7c3f0000 - 0x00007fff7c400000 	C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\verify.dll
+0x00007fff879c0000 - 0x00007fff87ba4000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007fff87e50000 - 0x00007fff87e7c000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007fff90160000 - 0x00007fff901e2000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007fff72580000 - 0x00007fff725a8000 	C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\java.dll
+0x00007fff72570000 - 0x00007fff7257a000 	C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\jimage.dll
+0x00007fff88c60000 - 0x00007fff88c6e000 	C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\instrument.dll
+0x00007fff6c2b0000 - 0x00007fff6c2c8000 	C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\Юыќур\.jdks\corretto-11.0.15\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\Users\Юыќур\.jdks\corretto-11.0.15\bin\server
+
+VM Arguments:
+jvm_args: -javaagent:C:\\Users\\Юыќур\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=C:\\Users\\Olga\\IdeaProjects\\NotFoundException\\target\\jacoco.exec 
+java_command: C:\Users\134E~1\AppData\Local\Temp\surefire18045325835992667389\surefirebooter14239617003965210248.jar C:\Users\Юыќур\AppData\Local\Temp\surefire18045325835992667389 2022-09-16T14-54-43_415-jvmRun1 surefire13716747797877981967tmp surefire_0355760868373944978tmp
+java_class_path (initial): C:\Users\134E~1\AppData\Local\Temp\surefire18045325835992667389\surefirebooter14239617003965210248.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 92274688                                  {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 1472200704                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5830732                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122913754                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122913754                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=C:\Program Files\Eclipse Adoptium\jdk-11.0.14.101-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Git\cmd;C:\Program Files (x86)\dotnet\;C:\Users\Юыќур\AppData\Local\Microsoft\WindowsApps;;C:\Users\Юыќур\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.2\bin;
+USERNAME=Юыќур
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
+OS uptime: 0 days 0:38 hours
+
+CPU:total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 18 model 1 stepping 0 microcode 0x0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, popcnt, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv
+
+Memory: 4k page, system-wide physical 5611M (311M free)
+TotalPageFile size 5611M (AvailPageFile size 96M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 51M, peak: 139M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.15+9-LTS) for windows-amd64 JRE (11.0.15+9-LTS), built on Apr 15 2022 22:20:31 by "Administrator" with unknown MS VC++:1916
+
+END.
